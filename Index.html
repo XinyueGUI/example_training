@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+	<style>
+
+h1{
+    text-align: center;
+    color:black;
+    text-transform: uppercase;
+} 
+
+header {
+    background: #00b7ea;
+    padding:25px;	
+}
+		nav {
+    text-align: center;
+}
+
+nav a {
+    background: #FFFFFF;
+    background-color:#A9A9A9;
+    color: #000000; 
+    display: inline-block;
+    padding: 5px;
+    margin: 1%; 
+    text-decoration: none; 
+    
+    -webkit-border-radius: 3;
+    -moz-border-radius: 3;
+    -o-border-radius: 3;
+    border-radius: 5px;
+    vertical-align: middle;
+
+    height:10%;
+    width: 15%;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    text-transform: capitalize;
+}
+
+.active {
+    background: #FFFFFF; 
+}
+
+a:active{
+    border: 1px solid #000000;
+    color: #00008B;
+    background-color: #FFFFFF;
+}
+
+a:hover{
+    border: 2px solid  #000000;
+}
+
+.half{
+	width:47%;
+	margin-top: 3%;
+	margin-right: 3%;
+	display:inline-block;
+	float:left;
+}
+
+.half{
+	background: #666666;
+	background: -moz-linear-gradient(top, #666666 0%, #90EE90 100%);
+	background: -webkit-linear-gradient(#666666 0%, #90EE90 100%);
+	background: -o-linear-gradient(#666666 0%, #90EE90 100%);
+	background: linear-gradient(#666666 0%, #90EE90 100%); 
+
+}
+
+
+
+	</style>
+</head>
+<body>
+    <header>
+		<h1>Graph Editing Tool For Power System</h1>
+		<nav>
+			<a href="index.html" class = "active">Introduction</a>
+			<a href="Description.html">Description</a>
+			<a href="Example Page.html">Example</a>
+			<a href="Training Page.html">Training</a>
+		</nav>
+	</header>
+
+	<div class='half' style="background-color:gray;">
+       
+        <ul>
+            <li>In a power system, there are several kinds of elements: Bus, Generator, transmission line, 
+				transformer, regulator, compensator and so on. </li>
+            <li>The project classifies those elements as two categories: The elements which can consume or generate energy and the elements only for energy transmission.
+				 the first class converts as a node and the second class converts as an edge. </li>
+            <li>In the test, it uses the Nordic system, after converting into the node-edge graph, it contains 74 nodes and 102 edges. </li>
+        </ul>
+      </div>
+
+	  <div class='half' style="background-color:gray; ">
+     
+        <ul>
+            <li>Blackout, also called power outage, is a collapse of power system. It will lead to the damage of grid and the loss of energy.  </li>
+            <li>Faults at power stations, electric transmission lines damage can lead to the voltage fluctuation and Insufficient reactive power. It may cause the system collapse. </li>
+            <li>In the project, the disturbance will create manually. Based on the disturbance, an animation will illustrate the whole procedure from the disturbance intaking until to the end – system self-recovery or blackout. The animation captures the voltage changing procedure and reactive power distribution.
+			</li>
+        </ul>
+      </div>
+	
+	  <div class='half' >
+		<ul>
+            <li>In The Description Page, you will find a User manual and a detail explanation for the visualization.  </li>
+            <li>In the Example Page, it shows the disturbance, and its corresponding animation with explanation. </li>
+            <li>In the Training Page, it shows three cases with three difference disturbances. It is sure that they will have different responces.<br> Please try to 
+                find the color pattern to identify each of them and make the assumption of the difference between normal case and abnormal case.
+			</li>
+        </ul>
+	
+	</div>
+</body>
+</html>

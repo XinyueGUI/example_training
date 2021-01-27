@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Page</title>
+</head>
+
+  <style> 
+#myVideo {
+    margin-top: 1%;
+    width: 45%;
+    border: 1px solid #555;;
+  }
+ 
+  
+.main-container{
+    display: inline-block;
+    left: 50%;
+    width: 37%; 
+    border: 1px solid #555;
+} 
+ .content-content-full{ 
+    
+    margin-top:1%; 
+    margin-left: 1%; 
+    width: 80%;
+ }
+</style> 
+
+</head> 
+<body> 
+  <section>
+    <h2>Description: </h2><br> <p>Take an action to create a disturbance manually. <br>
+    <h5>In the Video, there are two Graphs: </h5>
+    Graph one shows the voltage collapse process. <br> 
+    Graph two shows the reactive power distribution inside the system. <br>
+    <h5>Beside the Video, there is a electrical Single line diagram:</h5>
+    It is a reference. The disconnected line rendered as blue color.
+    
+    <hr>
+
+    <h3>Here is the Example:</h3>
+    <div style="background-color:gray; width:50%; padding: 2%;">
+        <p><b>Action:</b> Break the transmission line 4021-4042.<br>
+        <ul>
+            <li><b>Result in simulating system:</b> Please check the HTML file at bottom, an error occurred in Updating No.162. </li>
+            <li><b>Result in Graph one:</b> Voltage collapse in Central part.</li>
+            <li><b>Result in Graph two:</b> Color changing pattern appears in Updating No.129-No.137 and Updating No.153-No.162.</li>
+        </ul>
+      </div>
+ </p>
+  </section>
+
+
+  <section>
+    <video autoplay muted loop id="myVideo" controls>
+        <source src="4021-4042.mp4" type="video/mp4">
+      </video>
+
+ <!-- container which will contain our timeline -->
+    <div class="main-container"> 
+      <img src="4021-4042_pic.png" alt="refence" style="width:100%;">
+
+    </div> 
+
+
+<div id="content" class="content-content-full">
+    <iframe style='overflow-y:hidden; width:100%; height:20%' src="4021-4042_result.html" frameborder="1" width="100%" height="20%" type="text/html" display='inline-block'> </iframe>
+</div> 
+  
+  <hr>
+</section>
+
+
+
+    <script>
+      const detailsElement = document.querySelector('.details-example');
+
+detailsElement.addEventListener('toggle', event => {
+    if (event.target.open) {
+        console.log('open');
+    } else {
+        console.log('closed');
+    }
+});
+    </script>
+</body> 
+
+</html> 

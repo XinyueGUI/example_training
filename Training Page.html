@@ -1,0 +1,169 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demos</title>
+</head>
+
+  <style> 
+#myVideo {
+    width: 35%;
+    height: 46%;
+    border: 1px solid #555;;
+  }
+ 
+  
+  .main-container{
+    display: inline-block;
+    left: 41%;
+    margin-top: 1%;
+    width: 29%; 
+    border: 1px solid #555;
+} 
+ .content-content-full{ 
+    display: inline-block;
+    margin-top:1%; 
+    margin-left: 1%; 
+    width: 30%;
+ }
+</style> 
+
+</head> 
+<body> 
+  <section>
+    <h2>Make an Assumption: </h2><br> 
+   The image besides the video shows the position of disconnected line.<br> Please make a speculation based on the 
+   observation of the Video whether the system will have a blackout and when will the blackout occur if happen.<br>
+   You can check the correct answer by clicking the gray box as well as rolling down the HTML file at the right side.
+ </p>
+
+
+  </section>
+  <hr>
+
+  <h3>Case one</h3>
+    <p><b>Action:</b> Break the transmission line 4031-4041.
+
+<section>
+
+    
+  <video autoplay muted loop id="myVideo" controls>
+      <source src="4031-4041.mp4" type="video/mp4">
+    </video>
+
+<!-- container which will contain our timeline -->
+  <div class="main-container"> 
+    <img src="4031-4041_pic.png" alt="refence" style="width:100%;">
+
+  </div> 
+
+  <div id="content" class="content-content-full">
+    <iframe style='overflow-y:hidden; width:100%; height:20%' src="4031-4041_result.html" frameborder="1" width="100%" height="20%" type="text/html" display='inline-block'> </iframe>
+</div> 
+
+<div>
+<details class="details-example" style="background-color:gray; width:50%; padding: 2%;">
+  <summary>Please click me to find the explanation.</summary>
+  <ul>
+      <li> <b>Result in simulating system:</b> An error occurred in Updating No.188. </li>
+      <li><b> Result in Graph one:</b> Voltage collapse in Central part.</li>
+      <li><b>Result in Graph two:</b> Color changing pattern appears in Updating No.155-No.167.</li>
+  </ul>
+</details>
+</div>
+
+<hr>
+</section>
+
+<h3>Case two</h3>
+<p><b>Action:</b> Break the transmission line 4032-4042.<br>
+<section>
+  <video autoplay muted loop id="myVideo" controls>
+      <source src="4032-4042.mp4" type="video/mp4">
+    </video>
+
+<!-- container which will contain our timeline -->
+  <div class="main-container"> 
+    <img src="4032-4042_pic.png" alt="refence" style="width:100%;">
+
+  </div> 
+
+  <div id="content" class="content-content-full">
+    <iframe style='overflow-y:hidden; width:100%; height:20%' src="4032-4042_result.html" frameborder="1" width="100%" height="20%" type="text/html" display='inline-block'> </iframe>
+</div>
+
+<div>
+  
+<details class="details-example" style="background-color:gray; width:50%; padding: 2%;">
+  <summary>Please click me to find the explanation.</summary>
+  <ul>
+      <li> <b>Result in simulating system:</b> No error occurred. </li>
+      <li>Result in Graph one:</b> No Voltage collapse.</li>
+      <li><b>Result in Graph two:</b> No Color changing pattern.</li>
+  </ul>
+</details>
+</div>
+
+<hr>
+</section>
+<h3>Case three</h3>
+<p><b>Action:</b> Break the transmission line 4032-4044.<br>
+<section>
+  <video autoplay muted loop id="myVideo" controls>
+      <source src="4032-4044.mp4" type="video/mp4">
+    </video>
+
+<!-- container which will contain our timeline -->
+  <div class="main-container"> 
+    <img src="4032-4044_pic.png" alt="refence" style="width:100%;">
+
+  </div> 
+
+  <div id="content" class="content-content-full">
+    <iframe style='overflow-y:hidden; width:100%; height:20%' src="4032-4044_result.html" frameborder="1" width="100%" height="20%" type="text/html" display='inline-block'> </iframe>
+</div> 
+
+
+<div>
+ 
+<details class="details-example" style="background-color:gray; width:50%; padding: 2%;">
+  <summary>Please click me to find the explanation.</summary>
+  <ul>
+      <li><b>Result in simulating system:</b> An error occurred in Updating No.168. </li>
+      <li><b> Result in Graph one:</b> Voltage collapse in Central part.</li>
+      <li><b>Result in Graph two:</b> Color changing pattern appears in Updating No.109-No.115 and Updating No.163-No.167.</li>
+  </ul>
+</details>
+</div>
+<hr>
+</section>
+
+<section>
+    <h3>Some Questions</h3>
+    <p>Consider some questions after the animation watching<p></p>
+    <ul>
+        <li>Q1: Which part is the most vulnerable part in the nordic 32 test system? Equiv, North, Central or South.</li>
+        <li>Q2: Which part is the comsuming part(The total power consuming is greater then the power generating) and which part is the generating part?</li>
+        <li>Q3: Did you find the color changing difference between the three cases mentioned above?</li>
+    </ul>
+
+
+
+
+</section>
+
+    <script>
+      const detailsElement = document.querySelector('.details-example');
+
+detailsElement.addEventListener('toggle', event => {
+    if (event.target.open) {
+        console.log('open');
+    } else {
+        console.log('closed');
+    }
+});
+    </script>
+</body> 
+
+</html> 
